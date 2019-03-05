@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.1.0",
     "lodash": "^4.17.11",
     "request": "^2.88.0"
   }

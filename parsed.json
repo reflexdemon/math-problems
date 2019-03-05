@@ -1,0 +1,442 @@
+[
+    [
+        {
+            "firstNumber": 3,
+            "secondNumber": 11,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 8,
+            "answer": 16,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 11,
+            "secondNumber": 0,
+            "answer": 11,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 11,
+            "answer": 13,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 9,
+            "secondNumber": 4,
+            "answer": 13,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 14,
+            "answer": 22,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 9,
+            "secondNumber": 11,
+            "answer": 20,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 10,
+            "secondNumber": 2,
+            "answer": 12,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 4,
+            "secondNumber": 2,
+            "answer": 6,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 14,
+            "secondNumber": 10,
+            "answer": 24,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 0,
+            "secondNumber": 0,
+            "answer": 0,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 13,
+            "answer": 21,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 8,
+            "answer": 16,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 10,
+            "secondNumber": 1,
+            "answer": 11,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 14,
+            "secondNumber": 13,
+            "answer": 27,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 11,
+            "answer": 24,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 12,
+            "secondNumber": 9,
+            "answer": 21,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 3,
+            "answer": 11,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 12,
+            "secondNumber": 7,
+            "answer": 19,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 11,
+            "secondNumber": 7,
+            "answer": 18,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 7,
+            "secondNumber": 9,
+            "answer": 16,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 5,
+            "secondNumber": 2,
+            "answer": 7,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 3,
+            "secondNumber": 3,
+            "answer": 6,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 11,
+            "secondNumber": 12,
+            "answer": 23,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 1,
+            "answer": 3,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 1,
+            "secondNumber": 14,
+            "answer": 15,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 5,
+            "secondNumber": 3,
+            "answer": 8,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 0,
+            "secondNumber": 6,
+            "answer": 6,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 8,
+            "secondNumber": 8,
+            "answer": 16,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 7,
+            "answer": 20,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 1,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 2,
+            "answer": 10,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 12,
+            "secondNumber": 2,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 11,
+            "secondNumber": 6,
+            "answer": 17,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 7,
+            "answer": 20,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 3,
+            "secondNumber": 2,
+            "answer": 5,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 1,
+            "secondNumber": 6,
+            "answer": 7,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 14,
+            "secondNumber": 12,
+            "answer": 26,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 9,
+            "secondNumber": 13,
+            "answer": 22,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 0,
+            "secondNumber": 11,
+            "answer": 11,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 2,
+            "answer": 4,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 1,
+            "secondNumber": 13,
+            "answer": 14,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 2,
+            "secondNumber": 8,
+            "answer": 10,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 5,
+            "secondNumber": 4,
+            "answer": 9,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 8,
+            "answer": 10,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 5,
+            "secondNumber": 13,
+            "answer": 18,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 3,
+            "secondNumber": 1,
+            "answer": 4,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 9,
+            "secondNumber": 11,
+            "answer": 20,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 13,
+            "answer": 26,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 11,
+            "secondNumber": 14,
+            "answer": 25,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 12,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 1,
+            "secondNumber": 0,
+            "answer": 1,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 3,
+            "secondNumber": 13,
+            "answer": 16,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 4,
+            "answer": 17,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 9,
+            "secondNumber": 5,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 10,
+            "secondNumber": 9,
+            "answer": 19,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 2,
+            "secondNumber": 9,
+            "answer": 11,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 10,
+            "answer": 23,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 14,
+            "secondNumber": 6,
+            "answer": 20,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 8,
+            "secondNumber": 4,
+            "answer": 12,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 0,
+            "secondNumber": 10,
+            "answer": 10,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 13,
+            "secondNumber": 1,
+            "answer": 14,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 4,
+            "secondNumber": 1,
+            "answer": 5,
+            "operator": "+"
+        }
+    ],
+    [
+        {
+            "firstNumber": 12,
+            "secondNumber": 11,
+            "answer": 23,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 5,
+            "secondNumber": 0,
+            "answer": 5,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 5,
+            "secondNumber": 6,
+            "answer": 11,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 6,
+            "secondNumber": 0,
+            "answer": 6,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 7,
+            "secondNumber": 5,
+            "answer": 12,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 14,
+            "secondNumber": 7,
+            "answer": 21,
+            "operator": "+"
+        },
+        {
+            "firstNumber": 2,
+            "secondNumber": 2,
+            "answer": 4,
+            "operator": "+"
+        }
+    ]
+]
