@@ -3,15 +3,15 @@ const request = require('request');
 const fs = require('fs');
 const Handlebars = require('handlebars');
 const pdf = require('html-pdf');
+const dateFormat = require('dateformat');
+
+const now = new Date();
 
 let baseURL = 'https://math.vpv.io';
 var options = { 
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
-    width: "9in",            // allowed units: mm, cm, in, px
-    footer: {
-        height: "5mm",
-    },
+    width: "10in",            // allowed units: mm, cm, in, px
  };
 
 request({url: baseURL + '/api/add?size=90&min=0&max=15'}, responseHandler);
@@ -56,7 +56,7 @@ function responseHandler(err, response, body) {
         var html = template({
             data: parsed,
             meta: {
-                created: new Date()
+                created: dateFormat(now, "dd-mmm-yyyy")
             }
         });
         fs.writeFileSync('./docs/index' + responseCount + '.html', html);

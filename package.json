@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "handlebars": "^4.1.0",
     "html-pdf": "^2.2.0",
     "lodash": "^4.17.11",
