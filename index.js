@@ -45,9 +45,9 @@ function responseHandler(err, response, body) {
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
         var result = template(parsed);
-        fs.writeFileSync('./dist/index' + responseCount + '.html', result);
-        fs.writeFileSync('./dist/answres' + responseCount + '.txt', _.map(result, item => printAnswer(item) ).join('\n'));
-        pdf.create(result).toFile('./dist/output' + responseCount + '.pdf',function(err, res){
+        fs.writeFileSync('./docs/index' + responseCount + '.html', result);
+        fs.writeFileSync('./docs/answres' + responseCount + '.txt', _.map(result, item => printAnswer(item) ).join('\n'));
+        pdf.create(result).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
             console.log(res.filename);
           });
     }
