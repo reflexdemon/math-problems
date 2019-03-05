@@ -9,6 +9,9 @@ var options = {
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
     width: "9in",            // allowed units: mm, cm, in, px
+    footer: {
+        height: "5mm",
+    },
  };
 
 request({url: baseURL + '/api/add?size=90&min=0&max=15'}, responseHandler);
@@ -50,15 +53,15 @@ function responseHandler(err, response, body) {
         // console.log(answers);
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
-        var result = template({
+        var html = template({
             data: parsed,
             meta: {
                 created: new Date()
             }
         });
-        fs.writeFileSync('./docs/index' + responseCount + '.html', result);
-        fs.writeFileSync('./docs/answres' + responseCount + '.txt', answers);
-        pdf.create(result, options).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
+        fs.writeFileSync('./docs/index' + responseCount + '.html', html);
+        fs.writeFileSync('./docs/answers' + responseCount + '.txt', answers);
+        pdf.create(html, options).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
             console.log(res.filename);
           });
     }
