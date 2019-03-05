@@ -2,19 +2,20 @@ const _ = require('lodash');
 const request = require('request');
 const fs = require('fs');
 const Handlebars = require('handlebars');
+const pdf = require('html-pdf');
 
 let baseURL = 'https://math.vpv.io';
+var options = { format: 'Letter' };
 
-
-request({url: baseURL + '/api/add?size=70&min=0&max=15'}, responseHandler);
-request({ url: baseURL + '/api/sub?size=70&min=0&max=15' }, responseHandler);
-
+request({url: baseURL + '/api/add?size=100&min=0&max=15'}, responseHandler);
+request({ url: baseURL + '/api/sub?size=100&min=0&max=15' }, responseHandler);
 
 
 let counter = 0;
+let responseCount = 0;
 
 function responseHandler(err, response, body) {
-
+    responseCount++;
     var parsed = [];
     var column = [];
     if (err) {
@@ -22,27 +23,33 @@ function responseHandler(err, response, body) {
         return;
     } else {
         var result = JSON.parse(body);
-        // console.log(result);
+        // console.log(response);
         _.forEach(result, (item) => {
             // console.log(item);
             // answers.push(item.answer);
             // console.log(spacePad(item.firstNumber, 2));
             // console.log(spacePad(item.secondNumber, 2) + ' ' + item.operator);
             // console.log('_____\n\n_____');
-            column.push(item);
-            if ((++counter % 7) === 0) {
+            column.push( {
+                firstNumber : spacePad(item.firstNumber, 2),
+                secondNumber : spacePad(item.secondNumber, 2),
+                operator: item.operator
+            });
+            if ((++counter % 10) === 0) {
                 // console.log('\n');
                 parsed.push(column);
                 column = [];
             }
         });
-        console.log('RESULT:' + JSON.stringify(parsed, null, 4));
+        // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
         var result = template(parsed);
-        fs.writeFileSync('./output.html', result);
-        fs.writeFileSync('./parsed.json', JSON.stringify(parsed, null, 4));
-        // console.log('\n\nANSWERS:', _.map(result, item => printAnswer(item) ).join('\n'));
+        fs.writeFileSync('./dist/index' + responseCount + '.html', result);
+        fs.writeFileSync('./dist/answres' + responseCount + '.txt', _.map(result, item => printAnswer(item) ).join('\n'));
+        pdf.create(result).toFile('./dist/output' + responseCount + '.pdf',function(err, res){
+            console.log(res.filename);
+          });
     }
 
 }

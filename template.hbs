@@ -10,8 +10,13 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
   padding: 10px;
+}
+
+.cell {
+  height: 100px;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Clear floats after the columns */
@@ -24,13 +29,20 @@
 </head>
 <body>
 
-<h2>Three Equal Columns</h2>
+<h2>Math Problems</h2>
 
 <div class="row">
     {{#each .}}
       <div class="column">
         {{#each .}}
-          {{firstNumber}} {{operator}} {{secondNumber}} <br>
+          <span class="cell">
+            {{!-- {{firstNumber}} {{operator}} {{secondNumber}} <br> --}}
+            <div >{{firstNumber}}</div>
+            <div >{{operator}} {{secondNumber}}</div>
+            <hr>
+            <br>
+            <hr>
+          </span>
         {{/each}}
       </div>    
     {{/each}}
