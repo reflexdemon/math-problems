@@ -5,7 +5,11 @@ const Handlebars = require('handlebars');
 const pdf = require('html-pdf');
 
 let baseURL = 'https://math.vpv.io';
-var options = { format: 'Letter' };
+var options = { 
+    // format: 'Letter'
+    height: "13.5in",        // allowed units: mm, cm, in, px
+    width: "9in",            // allowed units: mm, cm, in, px
+ };
 
 request({url: baseURL + '/api/add?size=90&min=0&max=15'}, responseHandler);
 request({ url: baseURL + '/api/sub?size=90&min=0&max=15' }, responseHandler);
@@ -42,12 +46,19 @@ function responseHandler(err, response, body) {
             }
         });
         // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
+        var answers = 'Answers: \n' + _.map(result, item => printAnswer(item) ).join('\n');
+        // console.log(answers);
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
-        var result = template(parsed);
+        var result = template({
+            data: parsed,
+            meta: {
+                created: new Date()
+            }
+        });
         fs.writeFileSync('./docs/index' + responseCount + '.html', result);
-        fs.writeFileSync('./docs/answres' + responseCount + '.txt', _.map(result, item => printAnswer(item) ).join('\n'));
-        pdf.create(result).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
+        fs.writeFileSync('./docs/answres' + responseCount + '.txt', answers);
+        pdf.create(result, options).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
             console.log(res.filename);
           });
     }
