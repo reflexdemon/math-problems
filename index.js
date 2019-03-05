@@ -7,8 +7,8 @@ const pdf = require('html-pdf');
 let baseURL = 'https://math.vpv.io';
 var options = { format: 'Letter' };
 
-request({url: baseURL + '/api/add?size=100&min=0&max=15'}, responseHandler);
-request({ url: baseURL + '/api/sub?size=100&min=0&max=15' }, responseHandler);
+request({url: baseURL + '/api/add?size=90&min=0&max=15'}, responseHandler);
+request({ url: baseURL + '/api/sub?size=90&min=0&max=15' }, responseHandler);
 
 
 let counter = 0;
@@ -35,7 +35,7 @@ function responseHandler(err, response, body) {
                 secondNumber : spacePad(item.secondNumber, 2),
                 operator: item.operator
             });
-            if ((++counter % 10) === 0) {
+            if ((++counter % 9) === 0) {
                 // console.log('\n');
                 parsed.push(column);
                 column = [];
