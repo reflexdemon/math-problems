@@ -8,19 +8,19 @@ const dateFormat = require('dateformat');
 const now = new Date();
 
 let baseURL = 'https://math.vpv.io';
-var options = { 
+var options = {
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
     width: "10in",            // allowed units: mm, cm, in, px
  };
 
-request({url: baseURL + '/api/add?size=90&min=0&max=15'}, responseHandler);
-request({ url: baseURL + '/api/sub?size=90&min=0&max=15' }, responseHandler);
+request({url: baseURL + '/api/add?size=90&min=1&max=18'}, responseHandler);
+request({ url: baseURL + '/api/sub?size=90&min=1&max=18' }, responseHandler);
 
 
 let counter = 0;
 let responseCount = 0;
-
+let resultCollection = [];
 function responseHandler(err, response, body) {
     responseCount++;
     var parsed = [];
@@ -30,8 +30,12 @@ function responseHandler(err, response, body) {
         return;
     } else {
         var result = JSON.parse(body);
+        resultCollection.push(result);
+        if (resultCollection.length == 1) {
+          return;
+        }
         // console.log(response);
-        _.forEach(result, (item) => {
+        _.forEach(_.shuffle(_.flattenDeep(resultCollection)), (item) => {
             // console.log(item);
             // answers.push(item.answer);
             // console.log(spacePad(item.firstNumber, 2));
@@ -49,7 +53,7 @@ function responseHandler(err, response, body) {
             }
         });
         // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
-        var answers = 'Answers: \n' + _.map(result, item => printAnswer(item) ).join('\n');
+        var answers = 'Answers: \n' + _.map(resultCollection, item => printAnswer(item) ).join('\n');
         // console.log(answers);
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
@@ -59,9 +63,9 @@ function responseHandler(err, response, body) {
                 created: dateFormat(now, "dd-mmm-yyyy")
             }
         });
-        fs.writeFileSync('./docs/index' + responseCount + '.html', html);
-        fs.writeFileSync('./docs/answers' + responseCount + '.txt', answers);
-        pdf.create(html, options).toFile('./docs/output' + responseCount + '.pdf',function(err, res){
+        fs.writeFileSync('./docs/problems.html', html);
+        fs.writeFileSync('./docs/answers.txt', answers);
+        pdf.create(html, options).toFile('./docs/print.pdf',function(err, res){
             console.log(res.filename);
           });
     }
