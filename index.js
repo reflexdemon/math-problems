@@ -11,7 +11,7 @@ let baseURL = 'https://math.vpv.io';
 var options = {
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
-    width: "10in",            // allowed units: mm, cm, in, px
+    width: "9in",            // allowed units: mm, cm, in, px
  };
 
 request({url: baseURL + '/api/add?size=90&min=1&max=18'}, responseHandler);
@@ -35,7 +35,8 @@ function responseHandler(err, response, body) {
           return;
         }
         // console.log(response);
-        _.forEach(_.shuffle(_.flattenDeep(resultCollection)), (item) => {
+        var collectedValues = _.shuffle(_.flattenDeep(resultCollection));
+        _.forEach(collectedValues, (item) => {
             // console.log(item);
             // answers.push(item.answer);
             // console.log(spacePad(item.firstNumber, 2));
@@ -53,7 +54,7 @@ function responseHandler(err, response, body) {
             }
         });
         // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
-        var answers = 'Answers: \n' + _.map(resultCollection, item => printAnswer(item) ).join('\n');
+        var answers = 'Answers: \n' + _.map(collectedValues, item => printAnswer(item) ).join('\n');
         // console.log(answers);
         var source = fs.readFileSync('./template.hbs', 'utf8');
         var template = Handlebars.compile(source);
