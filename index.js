@@ -14,8 +14,9 @@ var options = {
     width: "9in",            // allowed units: mm, cm, in, px
  };
 
-request({url: baseURL + '/api/add?size=90&min=1&max=18'}, responseHandler);
-request({ url: baseURL + '/api/sub?size=90&min=1&max=18' }, responseHandler);
+request({url: baseURL + '/api/add?size=40&min=100&max=999'}, responseHandler);
+request({ url: baseURL + '/api/sub?size=50&min=100&max=999' }, responseHandler);
+request({ url: baseURL + '/api/mul?size=72&min=2&max=12' }, responseHandler);
 
 
 let counter = 0;
@@ -31,7 +32,7 @@ function responseHandler(err, response, body) {
     } else {
         var result = JSON.parse(body);
         resultCollection.push(result);
-        if (resultCollection.length == 1) {
+        if (resultCollection.length < 3) {
           return;
         }
         // console.log(response);
@@ -43,8 +44,8 @@ function responseHandler(err, response, body) {
             // console.log(spacePad(item.secondNumber, 2) + ' ' + item.operator);
             // console.log('_____\n\n_____');
             column.push( {
-                firstNumber : spacePad(item.firstNumber, 2),
-                secondNumber : spacePad(item.secondNumber, 2),
+                firstNumber : spacePad(item.firstNumber, 3),
+                secondNumber : spacePad(item.secondNumber, 3),
                 operator: item.operator
             });
             if ((++counter % 9) === 0) {
@@ -61,7 +62,7 @@ function responseHandler(err, response, body) {
         var html = template({
             data: parsed,
             meta: {
-                created: dateFormat(now, "dd-mmm-yyyy")
+                created: dateFormat(now, "dd-mmm-yyyy HH:MM:ss")
             }
         });
         fs.writeFileSync('./docs/problems.html', html);
