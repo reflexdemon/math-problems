@@ -7,16 +7,17 @@ const dateFormat = require('dateformat');
 
 const now = new Date();
 
-let baseURL = 'https://math.vpv.io';
+let baseURL = 'https://reflex-math.vpv.io';
 var options = {
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
     width: "9in",            // allowed units: mm, cm, in, px
  };
 
-request({url: baseURL + '/api/add?size=40&min=100&max=999'}, responseHandler);
-request({ url: baseURL + '/api/sub?size=50&min=100&max=999' }, responseHandler);
-request({ url: baseURL + '/api/mul?size=72&min=2&max=12' }, responseHandler);
+var testsCount = 0;
+// request({url: baseURL + '/api/add?size=40&min=100&max=999'}, responseHandler);testsCount++;
+// request({ url: baseURL + '/api/sub?size=50&min=100&max=999' }, responseHandler);testsCount++;
+request({ url: baseURL + '/api/mul?size=50&min=2&max=12' }, responseHandler);testsCount++;
 
 
 let counter = 0;
@@ -32,7 +33,7 @@ function responseHandler(err, response, body) {
     } else {
         var result = JSON.parse(body);
         resultCollection.push(result);
-        if (resultCollection.length < 3) {
+        if (resultCollection.length < testsCount) {
           return;
         }
         // console.log(response);
