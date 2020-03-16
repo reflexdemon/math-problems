@@ -49,12 +49,15 @@ function responseHandler(err, response, body) {
                 secondNumber : spacePad(item.secondNumber, 3),
                 operator: item.operator
             });
-            if ((++counter % 9) === 0) {
+            if ((++counter % 5) === 0) {
                 // console.log('\n');
                 parsed.push(column);
                 column = [];
             }
         });
+        if (column && column.length) {
+            parsed.push(column);
+        }
         // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
         var answers = 'Answers: \n' + _.map(collectedValues, item => printAnswer(item) ).join('\n');
         // console.log(answers);
