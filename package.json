@@ -12,7 +12,7 @@
     "dateformat": "^3.0.3",
     "handlebars": "^4.7.3",
     "html-pdf": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "request": "^2.88.0"
   }
 }
