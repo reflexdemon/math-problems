@@ -15,9 +15,9 @@ var options = {
  };
 
 var testsCount = 0;
-// request({url: baseURL + '/api/add?size=40&min=100&max=999'}, responseHandler);testsCount++;
+request({url: baseURL + '/api/add?size=40&min=0&max=9'}, responseHandler);testsCount++;
 // request({ url: baseURL + '/api/sub?size=50&min=100&max=999' }, responseHandler);testsCount++;
-request({ url: baseURL + '/api/mul?size=50&min=2&max=12' }, responseHandler);testsCount++;
+// request({ url: baseURL + '/api/mul?size=50&min=2&max=12' }, responseHandler);testsCount++;
 
 
 let counter = 0;
