@@ -4,6 +4,7 @@
   "description": "This is a cli tool to get the math problems from math API",
   "main": "index.js",
   "scripts": {
+    "start": "OPENSSL_CONF=/opt/openssl.cnf node index.js",
     "test": "echo \"Error! No tests yet\""
   },
   "author": "",

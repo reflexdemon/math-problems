@@ -71,8 +71,9 @@ function responseHandler(err, response, body) {
         });
         fs.writeFileSync('./docs/problems.html', html);
         fs.writeFileSync('./docs/answers.txt', answers);
-        pdf.create(html, options).toFile('./docs/print.pdf',function(err, res){
-            console.log(res.filename);
+        pdf.create(html, options).toFile('./docs/print.pdf', function(err, res){
+            if (err) console.log(err);
+            if (res) console.log(res.filename);
           });
     }
 
