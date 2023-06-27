@@ -7,7 +7,8 @@ const dateFormat = require('dateformat');
 
 const now = new Date();
 
-let baseURL = 'https://reflex-math.vpv.io';
+// let baseURL = 'https://reflex-math.vpv.io';
+let baseURL = 'http://localhost:8080';
 var options = {
     // format: 'Letter'
     height: "13.5in",        // allowed units: mm, cm, in, px
@@ -15,7 +16,7 @@ var options = {
  };
 
 var testsCount = 0;
-request({url: baseURL + '/api/add?size=60&min=0&max=9'}, responseHandler);testsCount++;
+request({url: baseURL + '/api/add?size=120&min=1&max=10'}, responseHandler);testsCount++;
 // request({ url: baseURL + '/api/sub?size=50&min=100&max=999' }, responseHandler);testsCount++;
 // request({ url: baseURL + '/api/mul?size=50&min=2&max=12' }, responseHandler);testsCount++;
 

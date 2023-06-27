@@ -4,7 +4,7 @@ git pull
 
 npm install
 
-node index.js
+npm start
 
 git add docs
 git commit -m "Published new set of problems $(date)"
