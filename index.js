@@ -7,21 +7,21 @@ const dateFormat = require('dateformat');
 
 const now = new Date();
 
-// const config = {
-//     min: 5,
-//     max: 20,
-//     size: 25,
-//     cols: 10,
-//     template: './template.hbs'
-// }
-
 const config = {
     min: 5,
     max: 20,
-    size: 15,
-    cols: 2,
-    template: './html_table_row_wise.template.hbs'
+    size: 25,
+    cols: 10,
+    template: './template.hbs'
 }
+
+// const config = {
+//     min: 5,
+//     max: 20,
+//     size: 15,
+//     cols: 2,
+//     template: './html_table_row_wise.template.hbs'
+// }
 
 
 
