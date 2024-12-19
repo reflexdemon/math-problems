@@ -7,18 +7,36 @@ const dateFormat = require('dateformat');
 
 const now = new Date();
 
+// const config = {
+//     min: 5,
+//     max: 20,
+//     size: 25,
+//     cols: 10,
+//     template: './template.hbs'
+// }
+
+const config = {
+    min: 5,
+    max: 20,
+    size: 15,
+    cols: 2,
+    template: './html_table_row_wise.template.hbs'
+}
+
+
+
 // let baseURL = 'https://reflex-math.vpv.io';
 let baseURL = 'http://localhost:8080';
 var options = {
-    // format: 'Letter'
-    height: "9in",        // allowed units: mm, cm, in, px
-    width: "13.5in",            // allowed units: mm, cm, in, px
+    format: 'Letter'
+    // height: "9in",        // allowed units: mm, cm, in, px
+    // width: "13.5in",            // allowed units: mm, cm, in, px
  };
 
 var testsCount = 0;
-request({url: baseURL + '/api/add?size=50&min=10&max=50'}, responseHandler);testsCount++;
-request({ url: baseURL + '/api/sub?size=50&min=10&max=50' }, responseHandler);testsCount++;
-// request({ url: baseURL + '/api/mul?size=50&min=2&max=12' }, responseHandler);testsCount++;
+request({url: baseURL + `/api/add?size=${config.size}&min=${config.min}&max=${config.max}`}, responseHandler);testsCount++;
+request({ url: baseURL + `/api/sub?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
+// request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
 
 
 
@@ -51,7 +69,7 @@ function responseHandler(err, response, body) {
                 secondNumber : spacePad(item.secondNumber, 3),
                 operator: item.operator
             });
-            if ((++counter % 5) === 0) {
+            if ((++counter % config.cols) === 0) {
                 // console.log('\n');
                 parsed.push(column);
                 column = [];
@@ -63,7 +81,7 @@ function responseHandler(err, response, body) {
         // console.log('RESULT:' + JSON.stringify(parsed, null, 4));
         var answers = 'Answers: \n' + _.map(collectedValues, item => printAnswer(item) ).join('\n');
         // console.log(answers);
-        var source = fs.readFileSync('./template.hbs', 'utf8');
+        var source = fs.readFileSync(config.template, 'utf8');
         Handlebars.registerHelper("inc", function(value, options) {
                 return parseInt(value) + 1;
         });
