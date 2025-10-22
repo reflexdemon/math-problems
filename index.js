@@ -11,8 +11,9 @@ const config = {
     min: 5,
     max: 20,
     size: 25,
-    cols: 10,
-    template: './template.hbs'
+    cols: 15,
+    // template: './template.hbs'
+    template: './a4_template.hbs'
 }
 
 // const config = {
