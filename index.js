@@ -8,10 +8,10 @@ const dateFormat = require('dateformat');
 const now = new Date();
 
 const config = {
-    min: 5,
-    max: 20,
-    size: 25,
-    cols: 15,
+    min: 1,
+    max: 999,
+    size: 30,
+    cols: 10,
     // template: './template.hbs'
     template: './a4_template.hbs'
 }
@@ -37,7 +37,8 @@ var options = {
 var testsCount = 0;
 request({url: baseURL + `/api/add?size=${config.size}&min=${config.min}&max=${config.max}`}, responseHandler);testsCount++;
 request({ url: baseURL + `/api/sub?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
-request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
+// request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
+request({ url: baseURL + `/api/mul?size=${config.size}&min=2&max=11` }, responseHandler);testsCount++;
 
 
 
