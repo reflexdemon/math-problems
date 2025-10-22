@@ -36,7 +36,7 @@ var options = {
 var testsCount = 0;
 request({url: baseURL + `/api/add?size=${config.size}&min=${config.min}&max=${config.max}`}, responseHandler);testsCount++;
 request({ url: baseURL + `/api/sub?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
-// request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
+request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
 
 
 
