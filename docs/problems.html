@@ -1,52 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 0px;
-}
-
-.cell {
-  height: 100px;
-  text-align: right;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  border: 1px solid #000000;
-  display: block;
-  padding: 10px;
-}
-.table-cell {
-  height: 100px;
-  text-align: right;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  border: 1px solid #000000;
-  padding: 10px;
-}
-.row {
-  align-content: center;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
 <body>
+<!-- -------------PDF GENERATEOR --------------- -->
 
-<p>VPV Math Problems 22-Oct-2025 22:37:47 <span style="color: #444; font-size: 10px">https://problem.vpv.io</span></p>
+<button id="pdf-generate">Download</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css" />
+<script src="https://kendo.cdn.telerik.com/2017.1.223/js/jszip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
+ 
+    <div id="example">
+    <div class="box wide hidden-on-narrow">
+    </div>
 
-<div class="row">
-  <table border="1" cellpadding="10" cellspacing="1">
+    <div class="page-container hidden-on-narrow">
+        <div class="pdf-page size-a4">
+            <page size="A4">
+               
+            
+               <!-- PDF CONTENT START -->
+               <p>VPV Math Problems 22-Oct-2025 22:52:44 <span style="color: #444; font-size: 10px">https://problem.vpv.io</span></p>
+
+               <table border="1" cellpadding="10" cellspacing="1">
     <tr>
       <th>Row</th>
       <th colspan="10">Problems</th>
@@ -56,14 +31,62 @@
           <td>1</td>
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  14 +   9 = _____ -->
-              <div > 14</div>
+            <!--  19 *   6 = _____ -->
+              <div > 19</div>
+              <div >*   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 19</div>
+            <div >*   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   6 *  16 = _____ -->
+              <div >  6</div>
+              <div >*  16</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  6</div>
+            <div >*  16</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 +   6 = _____ -->
+              <div > 13</div>
+              <div >+   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >+   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   9 +   9 = _____ -->
+              <div >  9</div>
               <div >+   9</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 14</div>
+            <!-- <div >  9</div>
             <div >+   9</div>
             <hr>
             <br>
@@ -72,46 +95,14 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  10 +  17 = _____ -->
-              <div > 10</div>
-              <div >+  17</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 10</div>
-            <div >+  17</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   8 +  17 = _____ -->
-              <div >  8</div>
-              <div >+  17</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  8</div>
-            <div >+  17</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  17 +  15 = _____ -->
-              <div > 17</div>
+            <!--   7 +  15 = _____ -->
+              <div >  7</div>
               <div >+  15</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 17</div>
+            <!-- <div >  7</div>
             <div >+  15</div>
             <hr>
             <br>
@@ -120,94 +111,78 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  15 -  10 = _____ -->
-              <div > 15</div>
-              <div >-  10</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-  10</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  12 +  13 = _____ -->
-              <div > 12</div>
-              <div >+  13</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 12</div>
-            <div >+  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 +   5 = _____ -->
-              <div > 16</div>
-              <div >+   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >+   5</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 +  19 = _____ -->
-              <div >  5</div>
-              <div >+  19</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >+  19</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -   5 = _____ -->
-              <div > 15</div>
-              <div >-   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-   5</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   9 +   6 = _____ -->
+            <!--   9 -   8 = _____ -->
               <div >  9</div>
-              <div >+   6</div>
+              <div >-   8</div>
                 <hr>
                 <br>
                 <hr>
             </td>
             <!-- <div >  9</div>
+            <div >-   8</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  18 -  12 = _____ -->
+              <div > 18</div>
+              <div >-  12</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 18</div>
+            <div >-  12</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  16 *   9 = _____ -->
+              <div > 16</div>
+              <div >*   9</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 16</div>
+            <div >*   9</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 -  11 = _____ -->
+              <div > 13</div>
+              <div >-  11</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >-  11</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 +   6 = _____ -->
+              <div > 13</div>
+              <div >+   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
             <div >+   6</div>
             <hr>
             <br>
@@ -222,142 +197,14 @@
           <td>2</td>
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--   8 -   5 = _____ -->
-              <div >  8</div>
-              <div >-   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  8</div>
-            <div >-   5</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   8 +   9 = _____ -->
-              <div >  8</div>
-              <div >+   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  8</div>
-            <div >+   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  19 *  13 = _____ -->
-              <div > 19</div>
-              <div >*  13</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 19</div>
-            <div >*  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -   7 = _____ -->
-              <div > 15</div>
-              <div >-   7</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-   7</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   6 *   6 = _____ -->
-              <div >  6</div>
-              <div >*   6</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  6</div>
-            <div >*   6</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   7 +  16 = _____ -->
+            <!--   7 -   5 = _____ -->
               <div >  7</div>
-              <div >+  16</div>
+              <div >-   5</div>
                 <hr>
                 <br>
                 <hr>
             </td>
             <!-- <div >  7</div>
-            <div >+  16</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  12 +   7 = _____ -->
-              <div > 12</div>
-              <div >+   7</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 12</div>
-            <div >+   7</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  12 +  19 = _____ -->
-              <div > 12</div>
-              <div >+  19</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 12</div>
-            <div >+  19</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  11 -   5 = _____ -->
-              <div > 11</div>
-              <div >-   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 11</div>
             <div >-   5</div>
             <hr>
             <br>
@@ -366,567 +213,15 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  19 -  13 = _____ -->
-              <div > 19</div>
-              <div >-  13</div>
+            <!--   8 +  14 = _____ -->
+              <div >  8</div>
+              <div >+  14</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 19</div>
-            <div >-  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-      
-      <!-- </div>     -->
-      </tr>
-      <!-- <div class="column"> -->
-        <tr>
-          <td>3</td>
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 +  13 = _____ -->
-              <div >  5</div>
-              <div >+  13</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >+  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -  12 = _____ -->
-              <div > 15</div>
-              <div >-  12</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-  12</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 *   9 = _____ -->
-              <div > 18</div>
-              <div >*   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >*   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  19 -  14 = _____ -->
-              <div > 19</div>
-              <div >-  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 19</div>
-            <div >-  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  17 *   9 = _____ -->
-              <div > 17</div>
-              <div >*   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 17</div>
-            <div >*   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 *  14 = _____ -->
-              <div > 15</div>
-              <div >*  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >*  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -  11 = _____ -->
-              <div > 15</div>
-              <div >-  11</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-  11</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  12 -  11 = _____ -->
-              <div > 12</div>
-              <div >-  11</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 12</div>
-            <div >-  11</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 +  15 = _____ -->
-              <div > 16</div>
-              <div >+  15</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >+  15</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 +  13 = _____ -->
-              <div > 16</div>
-              <div >+  13</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >+  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-      
-      <!-- </div>     -->
-      </tr>
-      <!-- <div class="column"> -->
-        <tr>
-          <td>4</td>
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -   7 = _____ -->
-              <div > 15</div>
-              <div >-   7</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-   7</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 +   9 = _____ -->
-              <div >  5</div>
-              <div >+   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >+   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  17 *  19 = _____ -->
-              <div > 17</div>
-              <div >*  19</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 17</div>
-            <div >*  19</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  19 *   5 = _____ -->
-              <div > 19</div>
-              <div >*   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 19</div>
-            <div >*   5</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 *   9 = _____ -->
-              <div >  5</div>
-              <div >*   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >*   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 *  14 = _____ -->
-              <div > 15</div>
-              <div >*  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >*  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 -  15 = _____ -->
-              <div > 18</div>
-              <div >-  15</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >-  15</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  13 -   9 = _____ -->
-              <div > 13</div>
-              <div >-   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 13</div>
-            <div >-   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 +   9 = _____ -->
-              <div > 18</div>
-              <div >+   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >+   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 +  16 = _____ -->
-              <div > 18</div>
-              <div >+  16</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >+  16</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-      
-      <!-- </div>     -->
-      </tr>
-      <!-- <div class="column"> -->
-        <tr>
-          <td>5</td>
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 *  10 = _____ -->
-              <div > 15</div>
-              <div >*  10</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >*  10</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 -  15 = _____ -->
-              <div > 18</div>
-              <div >-  15</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >-  15</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 *  12 = _____ -->
-              <div > 16</div>
-              <div >*  12</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >*  12</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 *  11 = _____ -->
-              <div >  5</div>
-              <div >*  11</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >*  11</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   7 +  17 = _____ -->
-              <div >  7</div>
-              <div >+  17</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  7</div>
-            <div >+  17</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 -  10 = _____ -->
-              <div > 16</div>
-              <div >-  10</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >-  10</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 -   5 = _____ -->
-              <div > 16</div>
-              <div >-   5</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >-   5</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 +   9 = _____ -->
-              <div > 18</div>
-              <div >+   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >+   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -  14 = _____ -->
-              <div > 15</div>
-              <div >-  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 -   8 = _____ -->
-              <div > 18</div>
-              <div >-   8</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >-   8</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-      
-      <!-- </div>     -->
-      </tr>
-      <!-- <div class="column"> -->
-        <tr>
-          <td>6</td>
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  11 *  14 = _____ -->
-              <div > 11</div>
-              <div >*  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 11</div>
-            <div >*  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  17 -  14 = _____ -->
-              <div > 17</div>
-              <div >-  14</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 17</div>
-            <div >-  14</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  15 -  10 = _____ -->
-              <div > 15</div>
-              <div >-  10</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 15</div>
-            <div >-  10</div>
+            <!-- <div >  8</div>
+            <div >+  14</div>
             <hr>
             <br>
             <hr>
@@ -950,228 +245,14 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  13 *  17 = _____ -->
-              <div > 13</div>
-              <div >*  17</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 13</div>
-            <div >*  17</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  18 -  17 = _____ -->
-              <div > 18</div>
-              <div >-  17</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 18</div>
-            <div >-  17</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  11 +  19 = _____ -->
-              <div > 11</div>
-              <div >+  19</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 11</div>
-            <div >+  19</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 *  13 = _____ -->
-              <div >  5</div>
-              <div >*  13</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >*  13</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  11 +  11 = _____ -->
-              <div > 11</div>
-              <div >+  11</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 11</div>
-            <div >+  11</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   8 -   6 = _____ -->
-              <div >  8</div>
-              <div >-   6</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  8</div>
-            <div >-   6</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-      
-      <!-- </div>     -->
-      </tr>
-      <!-- <div class="column"> -->
-        <tr>
-          <td>7</td>
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   6 *   8 = _____ -->
+            <!--   6 *   7 = _____ -->
               <div >  6</div>
-              <div >*   8</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  6</div>
-            <div >*   8</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   9 *   8 = _____ -->
-              <div >  9</div>
-              <div >*   8</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  9</div>
-            <div >*   8</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  16 *   6 = _____ -->
-              <div > 16</div>
-              <div >*   6</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 16</div>
-            <div >*   6</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   8 +   7 = _____ -->
-              <div >  8</div>
-              <div >+   7</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  8</div>
-            <div >+   7</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--   5 *   9 = _____ -->
-              <div >  5</div>
-              <div >*   9</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div >  5</div>
-            <div >*   9</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  10 *  18 = _____ -->
-              <div > 10</div>
-              <div >*  18</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 10</div>
-            <div >*  18</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  11 *  18 = _____ -->
-              <div > 11</div>
-              <div >*  18</div>
-                <hr>
-                <br>
-                <hr>
-            </td>
-            <!-- <div > 11</div>
-            <div >*  18</div>
-            <hr>
-            <br>
-            <hr>
-             -->
-          <!-- </span> -->
-          <!-- <span class="cell"> -->
-            <td nowrap="nowrap" class="table-cell">
-            <!--  12 *   7 = _____ -->
-              <div > 12</div>
               <div >*   7</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 12</div>
+            <!-- <div >  6</div>
             <div >*   7</div>
             <hr>
             <br>
@@ -1180,15 +261,15 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  16 *  18 = _____ -->
-              <div > 16</div>
-              <div >*  18</div>
+            <!--  18 -  12 = _____ -->
+              <div > 18</div>
+              <div >-  12</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 16</div>
-            <div >*  18</div>
+            <!-- <div > 18</div>
+            <div >-  12</div>
             <hr>
             <br>
             <hr>
@@ -1196,15 +277,79 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  18 -   9 = _____ -->
-              <div > 18</div>
-              <div >-   9</div>
+            <!--   7 *   7 = _____ -->
+              <div >  7</div>
+              <div >*   7</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 18</div>
-            <div >-   9</div>
+            <!-- <div >  7</div>
+            <div >*   7</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 +  12 = _____ -->
+              <div > 14</div>
+              <div >+  12</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >+  12</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   7 *   8 = _____ -->
+              <div >  7</div>
+              <div >*   8</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  7</div>
+            <div >*   8</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 *  13 = _____ -->
+              <div > 13</div>
+              <div >*  13</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >*  13</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   7 *  19 = _____ -->
+              <div >  7</div>
+              <div >*  19</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  7</div>
+            <div >*  19</div>
             <hr>
             <br>
             <hr>
@@ -1215,7 +360,537 @@
       </tr>
       <!-- <div class="column"> -->
         <tr>
-          <td>8</td>
+          <td>3</td>
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  11 -   6 = _____ -->
+              <div > 11</div>
+              <div >-   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 11</div>
+            <div >-   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   7 *   7 = _____ -->
+              <div >  7</div>
+              <div >*   7</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  7</div>
+            <div >*   7</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  17 *  13 = _____ -->
+              <div > 17</div>
+              <div >*  13</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 17</div>
+            <div >*  13</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  15 -   7 = _____ -->
+              <div > 15</div>
+              <div >-   7</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 15</div>
+            <div >-   7</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   6 +  18 = _____ -->
+              <div >  6</div>
+              <div >+  18</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  6</div>
+            <div >+  18</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   8 +  10 = _____ -->
+              <div >  8</div>
+              <div >+  10</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  8</div>
+            <div >+  10</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   6 *  16 = _____ -->
+              <div >  6</div>
+              <div >*  16</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  6</div>
+            <div >*  16</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 *  13 = _____ -->
+              <div > 13</div>
+              <div >*  13</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >*  13</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  11 -   5 = _____ -->
+              <div > 11</div>
+              <div >-   5</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 11</div>
+            <div >-   5</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  10 +   8 = _____ -->
+              <div > 10</div>
+              <div >+   8</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 10</div>
+            <div >+   8</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+      
+      <!-- </div>     -->
+      </tr>
+      <!-- <div class="column"> -->
+        <tr>
+          <td>4</td>
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  11 -   6 = _____ -->
+              <div > 11</div>
+              <div >-   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 11</div>
+            <div >-   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  10 *  15 = _____ -->
+              <div > 10</div>
+              <div >*  15</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 10</div>
+            <div >*  15</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 -   9 = _____ -->
+              <div > 14</div>
+              <div >-   9</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >-   9</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 *  13 = _____ -->
+              <div > 13</div>
+              <div >*  13</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >*  13</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 -  12 = _____ -->
+              <div > 14</div>
+              <div >-  12</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >-  12</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  10 +  16 = _____ -->
+              <div > 10</div>
+              <div >+  16</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 10</div>
+            <div >+  16</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   7 +  18 = _____ -->
+              <div >  7</div>
+              <div >+  18</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  7</div>
+            <div >+  18</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  16 -   8 = _____ -->
+              <div > 16</div>
+              <div >-   8</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 16</div>
+            <div >-   8</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  19 -  12 = _____ -->
+              <div > 19</div>
+              <div >-  12</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 19</div>
+            <div >-  12</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  11 -   7 = _____ -->
+              <div > 11</div>
+              <div >-   7</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 11</div>
+            <div >-   7</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+      
+      <!-- </div>     -->
+      </tr>
+      <!-- <div class="column"> -->
+        <tr>
+          <td>5</td>
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   8 *  10 = _____ -->
+              <div >  8</div>
+              <div >*  10</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  8</div>
+            <div >*  10</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   6 *  18 = _____ -->
+              <div >  6</div>
+              <div >*  18</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  6</div>
+            <div >*  18</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 +   5 = _____ -->
+              <div > 13</div>
+              <div >+   5</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >+   5</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 +  10 = _____ -->
+              <div > 14</div>
+              <div >+  10</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >+  10</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   8 *  18 = _____ -->
+              <div >  8</div>
+              <div >*  18</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  8</div>
+            <div >*  18</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  16 -  10 = _____ -->
+              <div > 16</div>
+              <div >-  10</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 16</div>
+            <div >-  10</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  15 +  10 = _____ -->
+              <div > 15</div>
+              <div >+  10</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 15</div>
+            <div >+  10</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  12 *  15 = _____ -->
+              <div > 12</div>
+              <div >*  15</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 12</div>
+            <div >*  15</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  10 +  14 = _____ -->
+              <div > 10</div>
+              <div >+  14</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 10</div>
+            <div >+  14</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  16 -  11 = _____ -->
+              <div > 16</div>
+              <div >-  11</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 16</div>
+            <div >-  11</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+      
+      <!-- </div>     -->
+      </tr>
+      <!-- <div class="column"> -->
+        <tr>
+          <td>6</td>
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  11 *   7 = _____ -->
+              <div > 11</div>
+              <div >*   7</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 11</div>
+            <div >*   7</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   8 *  11 = _____ -->
+              <div >  8</div>
+              <div >*  11</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  8</div>
+            <div >*  11</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
             <!--  11 -  10 = _____ -->
@@ -1234,15 +909,15 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  19 +  11 = _____ -->
-              <div > 19</div>
-              <div >+  11</div>
+            <!--  17 +  13 = _____ -->
+              <div > 17</div>
+              <div >+  13</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 19</div>
-            <div >+  11</div>
+            <!-- <div > 17</div>
+            <div >+  13</div>
             <hr>
             <br>
             <hr>
@@ -1250,31 +925,283 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  18 -  17 = _____ -->
+            <!--  19 +  18 = _____ -->
+              <div > 19</div>
+              <div >+  18</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 19</div>
+            <div >+  18</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  17 *  15 = _____ -->
+              <div > 17</div>
+              <div >*  15</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 17</div>
+            <div >*  15</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 -  11 = _____ -->
+              <div > 14</div>
+              <div >-  11</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >-  11</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   8 *  14 = _____ -->
+              <div >  8</div>
+              <div >*  14</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  8</div>
+            <div >*  14</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   9 +  16 = _____ -->
+              <div >  9</div>
+              <div >+  16</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  9</div>
+            <div >+  16</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  12 *  13 = _____ -->
+              <div > 12</div>
+              <div >*  13</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 12</div>
+            <div >*  13</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+      
+      <!-- </div>     -->
+      </tr>
+      <!-- <div class="column"> -->
+        <tr>
+          <td>7</td>
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  12 +  17 = _____ -->
+              <div > 12</div>
+              <div >+  17</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 12</div>
+            <div >+  17</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  18 +  12 = _____ -->
               <div > 18</div>
-              <div >-  17</div>
+              <div >+  12</div>
                 <hr>
                 <br>
                 <hr>
             </td>
             <!-- <div > 18</div>
+            <div >+  12</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  14 -  14 = _____ -->
+              <div > 14</div>
+              <div >-  14</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 14</div>
+            <div >-  14</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  15 *  14 = _____ -->
+              <div > 15</div>
+              <div >*  14</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 15</div>
+            <div >*  14</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  18 -  16 = _____ -->
+              <div > 18</div>
+              <div >-  16</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 18</div>
+            <div >-  16</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   9 -   6 = _____ -->
+              <div >  9</div>
+              <div >-   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  9</div>
+            <div >-   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  16 -  11 = _____ -->
+              <div > 16</div>
+              <div >-  11</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 16</div>
+            <div >-  11</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 +   6 = _____ -->
+              <div > 13</div>
+              <div >+   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >+   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   9 +  19 = _____ -->
+              <div >  9</div>
+              <div >+  19</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  9</div>
+            <div >+  19</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  19 -  17 = _____ -->
+              <div > 19</div>
+              <div >-  17</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 19</div>
             <div >-  17</div>
             <hr>
             <br>
             <hr>
              -->
           <!-- </span> -->
+      
+      <!-- </div>     -->
+      </tr>
+      <!-- <div class="column"> -->
+        <tr>
+          <td>8</td>
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--  15 *  17 = _____ -->
-              <div > 15</div>
-              <div >*  17</div>
+            <!--   7 +  10 = _____ -->
+              <div >  7</div>
+              <div >+  10</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div > 15</div>
-            <div >*  17</div>
+            <!-- <div >  7</div>
+            <div >+  10</div>
             <hr>
             <br>
             <hr>
@@ -1282,15 +1209,63 @@
           <!-- </span> -->
           <!-- <span class="cell"> -->
             <td nowrap="nowrap" class="table-cell">
-            <!--   5 *   7 = _____ -->
-              <div >  5</div>
-              <div >*   7</div>
+            <!--  17 +   9 = _____ -->
+              <div > 17</div>
+              <div >+   9</div>
                 <hr>
                 <br>
                 <hr>
             </td>
-            <!-- <div >  5</div>
-            <div >*   7</div>
+            <!-- <div > 17</div>
+            <div >+   9</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--   9 -   6 = _____ -->
+              <div >  9</div>
+              <div >-   6</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div >  9</div>
+            <div >-   6</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  15 -   8 = _____ -->
+              <div > 15</div>
+              <div >-   8</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 15</div>
+            <div >-   8</div>
+            <hr>
+            <br>
+            <hr>
+             -->
+          <!-- </span> -->
+          <!-- <span class="cell"> -->
+            <td nowrap="nowrap" class="table-cell">
+            <!--  13 *   8 = _____ -->
+              <div > 13</div>
+              <div >*   8</div>
+                <hr>
+                <br>
+                <hr>
+            </td>
+            <!-- <div > 13</div>
+            <div >*   8</div>
             <hr>
             <br>
             <hr>
@@ -1301,6 +1276,73 @@
       </tr>
   
     </table>
+
+               <!-- PDF CONTENT END -->
+
+            </page>
+        </div>
+    </div>
+    
+    <div class="responsive-message"></div>
+
+    <style>
+        /*
+            Use the DejaVu Sans font for display and embedding in the PDF file.
+            The standard PDF fonts have no support for Unicode characters.
+        */
+        .pdf-page {
+            font-family: "DejaVu Sans", "Arial", sans-serif;
+        }
+    </style>
+
+    <script>
+        // Import DejaVu Sans font for embedding
+
+        // NOTE: Only required if the Kendo UI stylesheets are loaded
+        // from a different origin, e.g. cdn.kendostatic.com
+        kendo.pdf.defineFont({
+            "DejaVu Sans"             : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
+            "DejaVu Sans|Bold"        : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+            "DejaVu Sans|Bold|Italic" : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+            "DejaVu Sans|Italic"      : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf"
+        });
+    </script>
+
+    <!-- Load Pako ZLIB library to enable PDF compression -->
+    <!-- <script src="../content/shared/js/pako.min.js"></script> -->
+
+    <script>
+      function getPDF(selector) {
+        kendo.drawing.drawDOM($(selector)).then(function(group){
+          kendo.drawing.pdf.saveAs(group, 'testing.pdf');
+        });
+      }
+    </script>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+          font-family: 'Montserrat', sans-serif;
+    }
+    page[size="A4"] {  
+      width: 790px;
+      height: 1000px; 
+    }
+    page {
+      background: white; 
+      display: block;
+      margin: 0 auto;
+    }
+
+</style>
+
 </div>
+
+<script type="text/javascript">
+       $('#pdf-generate').click(function(){
+         getPDF('.pdf-page');
+       })
+</script>
 </body>
 </html>
