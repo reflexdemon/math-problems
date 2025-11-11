@@ -10,8 +10,8 @@ const now = new Date();
 const config = {
     min: 1,
     max: 999,
-    size: 30,
-    cols: 10,
+    size: 8,
+    cols: 4,
     // template: './template.hbs'
     template: './a4_template.hbs'
 }
