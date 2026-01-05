@@ -41,9 +41,9 @@ let responseCount = 0;
 let resultCollection = [];
 
 let result = _.concat(
-    // mathProblem.addition(5, 99, 999),
-    mathProblem.subtraction(5, 99, 999),
-    // mathProblem.multiplication(5, 1, 12),
+    mathProblem.addition(7, 99, 999),
+    mathProblem.subtraction(7, 99, 999),
+    mathProblem.multiplication(6, 1, 12),
     // mathProblem.division(5, 1, 12)
 )
 
