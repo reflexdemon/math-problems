@@ -4,6 +4,7 @@ const fs = require('fs');
 const Handlebars = require('handlebars');
 const pdf = require('html-pdf');
 const dateFormat = require('dateformat');
+const mathProblem = require('./lib/math-problem');
 
 const now = new Date();
 
@@ -30,21 +31,26 @@ const config = {
 let baseURL = 'http://localhost:8080';
 var options = {
     format: 'Letter'
-    // height: "9in",        // allowed units: mm, cm, in, px
+    // height: "9in",              // allowed units: mm, cm, in, px
     // width: "13.5in",            // allowed units: mm, cm, in, px
  };
 
 var testsCount = 0;
-request({url: baseURL + `/api/add?size=${config.size}&min=${config.min}&max=${config.max}`}, responseHandler);testsCount++;
-request({ url: baseURL + `/api/sub?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
-// request({ url: baseURL + `/api/mul?size=${config.size}&min=${config.min}&max=${config.max}` }, responseHandler);testsCount++;
-request({ url: baseURL + `/api/mul?size=${config.size}&min=2&max=11` }, responseHandler);testsCount++;
-
-
-
 let counter = 0;
 let responseCount = 0;
 let resultCollection = [];
+
+let result = _.concat(
+    mathProblem.addition(5, 99, 999),
+    mathProblem.subtraction(5, 99, 999),
+    mathProblem.multiplication(5, 1, 12),
+    mathProblem.division(5, 1, 12)
+)
+
+responseHandler(null, null,result );testsCount++;
+
+
+
 function responseHandler(err, response, body) {
     responseCount++;
     var parsed = [];
@@ -53,8 +59,7 @@ function responseHandler(err, response, body) {
         console.log('Problem while accessing API:', err);
         return;
     } else {
-        var result = JSON.parse(body);
-        resultCollection.push(result);
+        resultCollection.push(body);
         if (resultCollection.length < testsCount) {
           return;
         }
@@ -117,3 +122,4 @@ function spacePad(num, places) {
     var space = places - num.toString().length + 1;
     return Array(+(space > 0 && space)).join(" ") + num;
 }
+
